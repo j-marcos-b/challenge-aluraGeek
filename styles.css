@@ -1,0 +1,136 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+    --bs-dropdown-link-hover-bg: #FBF7EC;
+    --bs-dropdown-link-active-color: #99684a;
+    --bs-dropdown-link-active-bg: #FBF7EC;
+ }
+
+ body,
+ .container-fluid {
+    background-color: #FBF7EC;
+ }
+
+ .container-fluid img {
+    width: 120px;
+ }
+
+ .navbar {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    --bs-navbar-padding-y: 0 !important;
+ }
+
+ .navbar li a {
+    color: #99684a;
+    position: relative;
+ }
+
+ .navbar li a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    transition: width 0.7s ease, left 0.7s ease;
+ }
+
+ .navbar li a:hover::before {
+    width: 100%;
+    left: 0;
+ }
+
+ h1,
+ h2 {
+    text-align: center;
+ }
+
+ #btn {
+    color: #A66A4E;
+    border: 1px solid #99684a;
+ }
+
+ #btn:hover,
+ #btn:active {
+    color: #fff;
+    background-color: #99684a;
+ }
+
+ form .form-control {
+    width: 130px;
+ }
+
+ .card {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 40px;
+ }
+
+ .card .btn {
+    --bs-btn-bg: none;
+ }
+
+ .container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    margin-top: 70px;
+ }
+
+ .form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .container-form h2 {
+    margin: 100px 0 40px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+ }
+
+ .form-container .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+ }
+
+ .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+ }
+
+ #tituloAgregar {
+   font-size: 1.5rem;
+   margin-top: 200px;
+}
+
+#joy {
+   margin-top: auto;
+}  
+
+@media (max-width: 767px) {
+   .hero {
+      padding-top: 50px;
+   }
+}
