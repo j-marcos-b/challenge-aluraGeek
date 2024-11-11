@@ -69,6 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     obtenerProductos();
-    
+    it
 });
 
