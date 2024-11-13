@@ -18,7 +18,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+        <nav id="navbar" class="navbar navbar-expand-md bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="img/logo-marcos.jpg" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -51,7 +51,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="agregar.html">Add Products</a></li>
+                                <li><a class="dropdown-item" href="productos.html">All Products</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -66,43 +66,47 @@
         </nav>
     </header>
 
-    <div class="container-form">
-        <h2>Send your questions or comments</h2>
+<!-- Tu formulario en contacto.html -->
+<div class="containerForm">
+    <h2>Send your questions or comments</h2>
 
-        <form class="form-container" action="#" method="POST">
-            <div class="mb-3">
-                <label for="exampleInputName" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleInputName" required minlength="3"
-                    placeholder="Enter your name">
-            </div>
+    <form class="form_area" id="commentForm">
+        <div class="form_group">
+            <label for="exampleInputName" class="sub_title">Name</label>
+            <input type="text" class="form_style" id="exampleInputName" required minlength="3" placeholder="Enter your name">
+        </div>
 
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    required>
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
+        <div class="form_group">
+            <label for="exampleInputEmail1" class="sub_title">Email address</label>
+            <input type="email" class="form_style" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
 
-            <div class="mb-3">
-                <label for="exampleTextarea" class="form-label">Your Message</label>
-                <textarea class="form-control" id="exampleTextarea" rows="4" required
-                    placeholder="Write your message here..."></textarea>
-            </div>
+        <div class="form_group">
+            <label for="exampleTextarea" class="sub_title">Your Message</label>
+            <textarea class="form_style" id="exampleTextarea" rows="4" required placeholder="Write your message here..."></textarea>
+        </div>
 
-            <button id="btn" type="submit" class="btn btn-outline-success">Submit</button>
-        </form>
-    </div>
+        <button type="submit" class="btn-f">Submit</button>
+    </form>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
     <script src="app.js"></script>
+    <script src="comentarios.js"></script>
 
 </body>
 
 <footer>
-    <!-- Aquí puedes agregar el contenido del pie de página si lo deseas -->
+    <span>&copy; 2024 by Marcos.</span>
+    <span>Follow me on
+      <a href="https://facebook.com" target="_blank"> <img src="img/facebook.png" alt="facebook"> </a>and
+      <a href="https://github.com/your-username" target="_blank"> <img src="img/github.png" alt="github" style="transform: scale(115%);"> </a>
+    </span>
+    <span>Designed by <a style="color: #99684a;" href="www.freepik.es">Freepik </a></span>
 </footer>
 
 </html>
