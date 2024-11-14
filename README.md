@@ -1,14 +1,18 @@
-Tienda Online
+# Proyecto de Gestión de Productos
 
-Este es un proyecto de tienda en línea desarrollado con HTML, CSS y JavaScript. El sitio permite la visualización de productos organizados por categorías, búsqueda de productos, y gestión de productos en el carrito de compras. Los productos se cargan dinámicamente desde una API externa.
+Este proyecto es una aplicación web para gestionar productos. Permite a los usuarios agregar nuevos productos, filtrar por categoría, buscar productos específicos y eliminar productos. Los productos precargados solo se eliminan de la vista y no del servidor para evitar su eliminación permanente.
 
-Características
-Categorías de Productos: El sitio tiene varias categorías de productos:
-Joyería
-Ropa de Hombre
-Ropa de Mujer
-Electrónica
-Cargar Productos: Los productos se cargan dinámicamente desde una API externa utilizando JavaScript.
-Agregar y Eliminar Productos: Los usuarios pueden agregar productos al carrito y eliminar productos del mismo.
-Búsqueda de Productos: Los productos pueden ser buscados por categoría.
-Página de Comentarios: Los usuarios pueden dejar comentarios sobre productos.
+## Tecnologías Utilizadas
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- MockAPI
+
+## Funcionalidades
+
+- **Agregar Productos:** Permite a los usuarios agregar nuevos productos al servidor a través de un formulario.
+- **Eliminar Productos:** Los productos agregados por el usuario se pueden eliminar completamente del servidor. Los productos precargados se eliminan solo de la vista.
+- **Filtrado por Categoría:** Muestra productos según la categoría seleccionada.
+- **Búsqueda de Productos:** Permite buscar productos por título o descripción.
