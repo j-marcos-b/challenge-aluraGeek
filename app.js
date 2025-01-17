@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function obtenerProductos() {
         try {
-            const url = "https://672fbdb366e42ceaf15e9507.mockapi.io/api/v1/products";
+            const url = "https://fakestoreapi.com/products/";
             const response = await fetch(url);
             productos = await response.json();
 
